@@ -13,14 +13,16 @@ public class App {
 
       /*
       ApplicationContext is an interface in Spring for providing configuration information to the application and managing the 
-      beans(objects)that make up the application. ApplicationContext will simply create a spring container for you inside JVM
+      beans(objects)that make up the application. ApplicationContext will simply create a spring container for you inside JVM. in
+      Spring Container you have beans(class with setters getters). So we have our objects inside this container and when user
+      use getBeans() method it retrieves or provides an instance of a bean from the container. The getBeans() belongs to
+      ApplicationContext() interface, so we need the object of it
       */
-    	// getBeans() belongs to an interface called ApplicationContext(), so we need the object of it
-    	ApplicationContext context = SpringApplication.run(App.class, args); // run() method returns the object
-    	// of Configuration Application Context i.e, it gives the object of ApplicationContext
+    
+    	ApplicationContext context = SpringApplication.run(App.class, args); // run() method is a static method provided by the 
+        // SpringApplication class. It is used to start a Spring Boot application and gives you the object of ApplicationContext.
     	
-    	Cars cars = context.getBean(Cars.class); // getBeans() gives you the object of the class, and we do not just
-    	// use the new keyword to initialize the object like we do as Spring will do it for us
+    	Cars cars = context.getBean(Cars.class); // getBeans() provide you the object of the class
     	Cars cars2 = context.getBean(Cars.class); //bean is requested again so create new instance
     	
     	List<Cars> listOfCars = new ArrayList();
