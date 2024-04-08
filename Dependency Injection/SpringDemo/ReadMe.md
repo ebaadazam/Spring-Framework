@@ -9,21 +9,12 @@
 9. The run() method is a static method provided by the SpringApplication class. It is used to start a Spring Boot application and gives you the object of ApplicationContext.
 10. ApplicationContext is an interface in Spring for providing configuration information to the application and managing the beans(objects)that make up the application. ApplicationContext will simply create a spring container for you inside JVM. In Spring Container you have beans(class with setters getters). So we have our objects inside this container and when user use getBeans() method it retrieves or provides an instance of a bean from the container. The getBeans() belongs to ApplicationContext() interface, so we need the object of it
 
-@SpringBootApplication
+@SpringBootApplication  
 public class App {
     public static void main(String[] args) {
-
-      /*
-      ApplicationContext is an interface in Spring for providing configuration information to the application and managing the 
-      beans(objects)that make up the application. ApplicationContext will simply create a spring container for you inside JVM. in
-      Spring Container you have beans(class with setters getters). So we have our objects inside this container and when user
-      use getBeans() method it retrieves or provides an instance of a bean from the container. The getBeans() belongs to
-      ApplicationContext() interface, so we need the object of it
-      */
     
-    	ApplicationContext context = SpringApplication.run(App.class, args); // run() method is a static method provided by the 
-        // SpringApplication class. It is used to start a Spring Boot application and gives you the object of ApplicationContext.
-    	
+    	ApplicationContext context = SpringApplication.run(App.class, args);
+        
     	Cars cars = context.getBean(Cars.class); // getBeans() provide you the object of the class
     	Cars cars2 = context.getBean(Cars.class); //bean is requested again so create new instance
     	
