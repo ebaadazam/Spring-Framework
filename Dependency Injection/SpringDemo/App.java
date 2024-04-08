@@ -1,44 +1,23 @@
-package com.ebaad.SpringFW;
+/*
+ * XmlBeanFactory has been removed in the later versions of Spring, you should replace the usage of 
+ * XmlBeanFactory with an alternative i.e ApplicationContext. As I mentioned before, for 
+ * modern Spring applications, it's recommended to use ApplicationContext implementations like 
+ * ClassPathXmlApplicationContext or FileSystemXmlApplicationContext for loading bean definitions from
+ *  an XML file.
+ */
 
-import java.util.ArrayList;
-import java.util.List;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+package com.ebaad.SpringBeanFactory;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-@SpringBootApplication  // annotation in Spring Boot that simplifies the configuration and setup of Spring applications, enabling
-// you to quickly create and deploy applications with minimal configuration.
 public class App {
     public static void main(String[] args) {
-
-      /*
-      ApplicationContext is an interface in Spring for providing configuration information to the application and managing the 
-      beans(objects)that make up the application. ApplicationContext will simply create a spring container for you inside JVM. in
-      Spring Container you have beans(class with setters getters). So we have our objects inside this container and when user
-      use getBeans() method it retrieves or provides an instance of a bean from the container. The getBeans() belongs to
-      ApplicationContext() interface, so we need the object of it
-      */
-    
-    	ApplicationContext context = SpringApplication.run(App.class, args); // run() method is a static method provided by the 
-        // SpringApplication class. It is used to start a Spring Boot application and gives you the object of ApplicationContext.
-    	
-    	Cars cars = context.getBean(Cars.class); // getBeans() provide you the object of the class
-    	// above if you seee we have not use the "new" keyword to initialze the object of Cars class as spring will do it for us 
-        Cars cars2 = context.getBean(Cars.class); //bean is requested again so create new instance
-    	
-    	List<Cars> listOfCars = new ArrayList();
-    	cars.setBrand("Audi");
-    	cars.setModel("R8 V10 Spyder");
-    	cars.setYear(2020);
-    	cars2.setBrand("Merc");
-    	cars2.setModel("Maybach S680");
-    	cars2.setYear(2023);
-    	
-    	listOfCars.add(cars);
-    	listOfCars.add(cars2);
-    	
-        for(Cars c : listOfCars) {
-        	System.out.println(c);
-        }
+        ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml"); // If the error says class not found then place the spring.xml file into the class path i.e within src/main/java folder
+        
+        Cars cars = (Cars) context.getBean("carz"); // Spring do not know this "carz" so we have to do some
+        // configuration which can be done in XML based configuration, java based configuration or annotations
+        // so create an XML configuration file named spring.xml
+        
+        cars.drive();
     }
 }
