@@ -23,7 +23,8 @@ public class App {
         // SpringApplication class. It is used to start a Spring Boot application and gives you the object of ApplicationContext.
     	
     	Cars cars = context.getBean(Cars.class); // getBeans() provide you the object of the class
-    	Cars cars2 = context.getBean(Cars.class); //bean is requested again so create new instance
+    	// above if you seee we have not use the "new" keyword to initialze the object of Cars class as spring will do it for us 
+        Cars cars2 = context.getBean(Cars.class); //bean is requested again so create new instance
     	
     	List<Cars> listOfCars = new ArrayList();
     	cars.setBrand("Audi");
