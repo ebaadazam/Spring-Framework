@@ -1,5 +1,5 @@
 1. Open Spring Tool Suite
-2. Create a Maven Project(But Spring Starter Project is recommended for Spring Boot) with quickstart
+2. Create a Maven Project(But Spring Starter Project is recommended for Spring Boot) with quickstart. In my system Spring Starter Project was giving some error so I chose to work on Maven but if you had choosen Spring Starter Project then you do not need to add dependencies explicitly in pom.xml file as it will be there already 
 3. Add 'Spring Context' and 'Spring Boot Starter Web' Dependencies in pom.xml file from the MVN Repository
 4. Create a POJO class (bean) with the setters and getters for all data members and toString() method
 5. The POJO we have created is Cars. Mark Cars class with @Component annotation which means when we use the annotation @Component then Spring Framework is responsible for creating the object of class Cars using getBeans(). @Component is a Spring annotation used to indicate that a Java class is a Spring component. Spring components are Java classes managed by the Spring IoC (Inversion of Control) container.
