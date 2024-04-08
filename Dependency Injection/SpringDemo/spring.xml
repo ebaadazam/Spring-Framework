@@ -1,1 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans 
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+    <!--Configuration for the Cars class-->
+    <bean id="carz" class="com.ebaad.SpringBeanFactory.Cars"></bean>
+    <!--The above line says when the user says carz create the object of the class Cars-->
+
+</beans>
 
