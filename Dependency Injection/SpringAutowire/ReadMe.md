@@ -10,7 +10,7 @@
 10. Mark App.java class as @SpringBootApplication annotation that simplifies the configuration and setup of Spring applications, enabling you to quickly create and deploy applications with minimal configuration.
 11. Now within main method, we will create the object of the ApplicatinContext to use the getBeans() method which will be used to retrieve/provide you the instance of a class/bean from the container
 12. The run() method is a static method provided by the SpringApplication class. It is used to start a Spring Boot application and gives you the object of ApplicationContext.
-13. ApplicationContext is an interface in Spring for providing configuration information to the application and managing the beans(objects)that make up the application. ApplicationContext will simply create a spring container for you inside JVM. In Spring Container you have beans(class with setters getters). So we have our objects inside this container and when user use getBeans() method it retrieves or provides an instance of a bean from the container. The getBeans() belongs to ApplicationContext() interface, so we need the object of it
+13. ApplicationContext is an interface in Spring for providing configuration information to the application and managing the beans(objects)that make up the application. ApplicationContext will simply create a spring container for you inside JVM. In Spring Container you have beans(class with setters getters). So we have our objects inside this container and when user use getBeans() method it retrieves or provides an instance of a bean from the container. The getBeans() belongs to ApplicationContext() interface, so we need the object of ApplicationContext to use getBeans() method
 
 
 
