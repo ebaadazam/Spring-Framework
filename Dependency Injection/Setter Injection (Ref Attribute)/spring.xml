@@ -1,1 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans 
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+    <!--Configuration for the Cars class-->
+    <!--The below line says when the user says cars create the object of the class Cars-->
+    <bean id="cars" class="com.ebaad.SpringSetterInjection.Cars">
+		
+		<!--Here we define Setter Injection. Every variable in your class is a property. And every class has a bean-->
+		<!-- If your property is of type reference then use "ref" called as ref attribute -->
+		<property name="sports" ref="SportsCar"></property>
+	</bean>
+		
+	<!-- Bean for SportsCar class -->	
+	<bean id="SportsCar" class="com.ebaad.SpringSetterInjection.SportsCar"></bean>
+	
+
+</beans>
 
