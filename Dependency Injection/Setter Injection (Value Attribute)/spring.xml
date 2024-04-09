@@ -1,1 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans 
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+    <!--Configuration for the Cars class-->
+    <!--The below line says when the user says carz create the object of the class Cars-->
+    <bean id="cars" class="com.ebaad.SpringSetterInjection.Cars">
+		
+		<!--Here we define Setter Injection-->
+		<!-- Every variable in your class is a property -->
+		<!-- If your property is a primitive type then you can assign it in "value" but if your property
+		is of type reference then use "ref" called as ref attribute -->
+		<!-- So bydefault the milleage will be 15 if you provide no value to it, that's what it does -->
+		<property name="milleage" value="15"></property>
+		
+	</bean>
+    
+
+</beans>
 
