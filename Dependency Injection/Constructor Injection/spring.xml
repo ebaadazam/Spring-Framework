@@ -1,1 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans 
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+    <!--Configuration for the Cars class-->
+    <!--The below line says when the user says carz create the object of the class Cars-->
+    <bean id="cars" class="com.ebaad.SpringConstructorInjection.Cars">
+		<!-- Constructor Injection for primitive value -->
+		<constructor-arg value="16"></constructor-arg>
+		
+		<!-- Constructor Injection for reference value -->
+		<constructor-arg ref="luxury"></constructor-arg>
+	</bean>
+	
+	<!--Configuration for the LuxuryCar class-->
+	<bean id="luxury" class="com.ebaad.SpringConstructorInjection.LuxuryCar">
+		<constructor-arg value="4.5"></constructor-arg>
+	</bean>
+
+</beans>
 
