@@ -5,3 +5,5 @@
 spring.datasource.username=root
 spring.datasource.password=ebaad
 spring.datasource.url=jdbc:mysql://localhost:3306/ebaad
+5. Add the dependencies in the pom.xml file required for Spring JDBC.
+6.  
