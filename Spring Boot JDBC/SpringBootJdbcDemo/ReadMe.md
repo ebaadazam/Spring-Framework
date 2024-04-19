@@ -6,4 +6,5 @@ spring.datasource.username=root
 spring.datasource.password=ebaad
 spring.datasource.url=jdbc:mysql://localhost:3306/ebaad
 5. Add the dependencies in the pom.xml file required for Spring JDBC.
-6.  
+6.  Now we create another java file named 'CarRepository' for communicating with the database as we cant define all the operations and the logic for the database connectivity in the main java spring file. For that we need to have a separate file which will be responsible for communicating with the database.
+7.  
