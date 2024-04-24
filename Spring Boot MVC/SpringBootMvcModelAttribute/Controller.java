@@ -18,6 +18,14 @@ public class Controller {
 	public String home() {
 		return "index";
 	}
+
+	// We can also use ModelAttribute on the method level. The moment you say ModelAttribute, your spring framework it will first call the ModelAttribute before calling any RequestMapping
+	// It does not matter whatever method you call for RequestMapping, everywhere the name value will be there
+	@ModelAttribute
+	// This method is responsible to assign a value to the attribute 'name'
+	public void func(Model m) {
+		m.addAttribute("name", "Ebaad");
+	}
 	
 	// We are accepting the individual values and then we are assigning them to the object here. So instead of RequestParam we
 	// simply mention the Watch object here in the parenthesis and the names will be assigned automatically to Watch object and 
