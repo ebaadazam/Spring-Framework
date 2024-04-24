@@ -8,5 +8,6 @@ pageEncoding="UTF-8" isELIgnored="false" %>
 </head>
 <body>
 <h3>${wforwatch}</h3>
+<h3>Welcome to the Watch Shop ${name}</h3>
 </body>
 </html>
