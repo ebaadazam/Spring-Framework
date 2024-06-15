@@ -21,9 +21,9 @@ Pointcut -  A predicate that matches join points. A pointcut expression determin
 <b>Weaving:</b> The process of linking aspects with other application types or objects to create an advised object. This can be done at compile time, load time, or runtime. Spring AOP performs weaving at runtime.<br>
 
 
-<b>Common Use Cases:</b>
-<b>Logging:</b> Log method calls, parameters, and execution time. <br>
-<b>Transaction Management:</b> Manage transactions declaratively.<br>
-<b>Security:</b> Implement security checks and access controls.<br>
-<b>Caching:</b> Add caching mechanisms to methods.<br>
-<b>Error Handling:</b> Centralize error and exception handling.<br>
+<b>Common Use Cases:</b><br>
+<b>Logging - </b> Log method calls, parameters, and execution time. <br>
+<b>Transaction Management - </b> Manage transactions declaratively.<br>
+<b>Security - </b> Implement security checks and access controls.<br>
+<b>Caching - </b> Add caching mechanisms to methods.<br>
+<b>Error Handling - </b> Centralize error and exception handling.<br>
