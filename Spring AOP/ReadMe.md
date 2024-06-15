@@ -1,4 +1,4 @@
-<b>Aspect-Oriented Programming (AOP)</b> is a programming paradigm that aims to increase modularity by allowing the separation of cross-cutting concerns. AOP complements Object-Oriented Programming (OOP) by providing a way to add behavior to existing code without modifying the code itself. In Spring, AOP is used to implement cross-cutting concerns like logging, transaction management, security, etc.
+<b>Aspect-Oriented Programming (AOP)</b> is a programming paradigm that aims to increase modularity by allowing the separation of cross-cutting concerns from the business logic. AOP complements Object-Oriented Programming (OOP) by providing a way to add behavior to existing code without modifying the code itself. In Spring, AOP is used to implement cross-cutting concerns like logging, transaction management, security, etc.
 
 <b>Key Concepts in Spring AOP:</b> <br>
 <b>Aspect:</b> A module that encapsulates a concern that cuts across multiple classes. In Spring AOP, an aspect can be implemented using regular classes annotated with @Aspect.<br>
@@ -19,3 +19,11 @@ Pointcut -  A predicate that matches join points. A pointcut expression determin
 <b>Target Object:</b> The object being advised by one or more aspects; this object is always a proxied object.<br>
 
 <b>Weaving:</b> The process of linking aspects with other application types or objects to create an advised object. This can be done at compile time, load time, or runtime. Spring AOP performs weaving at runtime.<br>
+
+
+<b>Common Use Cases:</b>
+<b>Logging:</b> Log method calls, parameters, and execution time. <br>
+<b>Transaction Management:</b> Manage transactions declaratively.<br>
+<b>Security:</b> Implement security checks and access controls.<br>
+<b>Caching:</b> Add caching mechanisms to methods.<br>
+<b>Error Handling:</b> Centralize error and exception handling.<br>
