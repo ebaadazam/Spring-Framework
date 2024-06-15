@@ -7,12 +7,12 @@
 
 <b>Advice:</b> Action taken by an aspect at a particular join point. Different types of advice include:<br>
 
-Before Advice:  Runs before the method execution. <br>
-After Advice:  Runs after the method execution, regardless of its outcome. <br>
-After Returning Advice:  Runs after the method execution, only if the method completes successfully. <br>
-After Throwing Advice:  Runs after the method execution, only if the method exits by throwing an exception. <br>
-Around Advice:  Runs around the method execution, allowing the advice to execute both before and after the method execution. <br>
-Pointcut:  A predicate that matches join points. A pointcut expression determines where advice should be applied. <br>
+Before Advice -  Runs before the method execution. <br>
+After Advice -  Runs after the method execution, regardless of its outcome. <br>
+After Returning Advice -  Runs after the method execution, only if the method completes successfully. <br>
+After Throwing Advice -  Runs after the method execution, only if the method exits by throwing an exception. <br>
+Around Advice -  Runs around the method execution, allowing the advice to execute both before and after the method execution. <br>
+Pointcut -  A predicate that matches join points. A pointcut expression determines where advice should be applied. <br>
 
 <b>Introduction:</b> Adding new methods or fields to existing classes.<br>
 
