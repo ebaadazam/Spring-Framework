@@ -14,7 +14,7 @@ After Advice -  Runs after the method execution, irrespective of the exception o
 After Returning Advice -  Runs after the method execution, only if the method completes successfully and not have any exception. <br>
 After Throwing Advice -  Runs after the method execution, only if the method throws an exception. <br>
 Around Advice -  Runs around the method execution, allowing the advice to execute both before and after the method execution. <br>
-Pointcut -  A predicate that matches join points. A pointcut expression determines where advice should be applied. It is basically the  <br>
+Pointcut -  A predicate that matches join points. A pointcut expression determines where advice should be applied. It is basically the expression that we use along with advice<br>
 
 <b>4. Introduction:</b> Adding new methods or fields to existing classes.<br>
 
