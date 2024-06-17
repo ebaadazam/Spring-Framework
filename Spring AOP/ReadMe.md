@@ -10,11 +10,11 @@ In AOP, we create a separate class annotated with @Aspect and @Component and not
 <b>3. Advice:</b> Action taken by an aspect at a particular join point. Different types of advice include:<br>
 
 Before Advice -  Runs before the method execution. <br>
-After Advice -  Runs after the method execution, regardless of the exception or error. <br>
+After Advice -  Runs after the method execution, irrespective of the exception or error. <br>
 After Returning Advice -  Runs after the method execution, only if the method completes successfully and not have any exception. <br>
-After Throwing Advice -  Runs after the method execution, only if the method exits by throwing an exception. <br>
+After Throwing Advice -  Runs after the method execution, only if the method throws an exception. <br>
 Around Advice -  Runs around the method execution, allowing the advice to execute both before and after the method execution. <br>
-Pointcut -  A predicate that matches join points. A pointcut expression determines where advice should be applied. <br>
+Pointcut -  A predicate that matches join points. A pointcut expression determines where advice should be applied. It is basically the  <br>
 
 <b>4. Introduction:</b> Adding new methods or fields to existing classes.<br>
 
