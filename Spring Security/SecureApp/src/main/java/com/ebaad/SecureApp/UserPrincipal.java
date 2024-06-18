@@ -1,5 +1,5 @@
 
-package com.telusko.secureapp;
+package com.ebaad.secureapp;
 
 import java.util.Collection;
 import java.util.Collections;
