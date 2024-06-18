@@ -1,5 +1,5 @@
 // POJO Class
-package com.telusko.secureapp;
+package com.ebaad.secureapp;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
