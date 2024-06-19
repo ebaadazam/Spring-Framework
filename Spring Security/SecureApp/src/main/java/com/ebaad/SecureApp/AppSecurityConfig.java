@@ -21,24 +21,11 @@ public class AppSecurityConfig extends WebSecurityConfigurerAdapter
 	@Bean
 	public AuthenticationProvider authProvider()
 	{
-    // If we want to work with the database then we use DaoAuthenticationProvider
+		// Fetching the data from the database
 		DaoAuthenticationProvider provider =new DaoAuthenticationProvider();
 		provider.setUserDetailsService(userDetailsService);
 		provider.setPasswordEncoder(new BCryptPasswordEncoder());
 		return provider;
 	}
-	
-	
-	
-   @Bean // to get the object of UserDetailsService
-   @Override
-   // Overridden method of WebSecurityConfigurerAdapter interface
-   protected UserDetailsService userDetailsService() {
-       // UserDetails is an inbuilt class in spring security 
-       List<UserDetails> users = new ArrayList<>();
-       users.add(User.withDefaultPasswordEncoder().username("ebaad").password("1234").roles("USER").build());
-    		
-       return new InMemoryUserDetailsManager(users);
-   } 
 
 }
