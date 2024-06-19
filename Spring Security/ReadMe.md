@@ -7,21 +7,21 @@ Spring Security is a powerful and highly customizable authentication and access-
 
 <b>3. Security Context:</b> This is a place where Spring Security stores details about the authenticated user, including their roles and permissions. The SecurityContext is available throughout the application and can be accessed using SecurityContextHolder.<br>
 
-<b>Filters:</b> Spring Security uses a chain of filters to perform different security-related tasks. The core filter is DelegatingFilterProxy, which delegates the actual work to a Spring-managed bean.<br>
+<b>4. Filters:</b> Spring Security uses a chain of filters to perform different security-related tasks. The core filter is DelegatingFilterProxy, which delegates the actual work to a Spring-managed bean.<br>
 
-<b>Access Decision Manager:</b> This is responsible for making authorization decisions. It uses a list of AccessDecisionVoter instances to vote on whether access should be granted.<br>
+<b>5. Access Decision Manager:</b> This is responsible for making authorization decisions. It uses a list of AccessDecisionVoter instances to vote on whether access should be granted.<br>
 
-<b>Authentication Manager:</b> This is responsible for managing authentication. It uses a list of AuthenticationProvider instances to perform the actual authentication.<br>
+<b>6. Authentication Manager:</b> This is responsible for managing authentication. It uses a list of AuthenticationProvider instances to perform the actual authentication.<br>
 
 <h3><b>Key Features</b></h3>
-<b>Declarative Security:</b> Configure security constraints using annotations (e.g., @Secured, @PreAuthorize, @PostAuthorize) and XML configuration.<br>
+<b>1. Declarative Security:</b> Configure security constraints using annotations (e.g., @Secured, @PreAuthorize, @PostAuthorize) and XML configuration.<br>
 
-<b>Comprehensive Authentication Mechanisms:</b> Support for various authentication mechanisms like form-based login, HTTP Basic authentication, Digest authentication, OAuth2, JWT, etc.<br>
+<b>2. Comprehensive Authentication Mechanisms:</b> Support for various authentication mechanisms like form-based login, HTTP Basic authentication, Digest authentication, OAuth2, JWT, etc.<br>
 
-<b>Method-Level Security:</b> Protect individual methods using annotations.<br>
+<b>3. Method-Level Security:</b> Protect individual methods using annotations.<br>
 
-<b>URL-Based Security:</b> Secure web requests using configuration that specifies which roles can access which URLs.<br>
+<b>4. URL-Based Security:</b> Secure web requests using configuration that specifies which roles can access which URLs.<br>
 
-<b>Password Management:</b> Support for password encoding and decoding with BCrypt, SCrypt, Pbkdf2, etc.<br>
+<b>5. Password Management:</b> Support for password encoding and decoding with BCrypt, SCrypt, Pbkdf2, etc.<br>
 
-<b>Security Filters:</b> Provides a robust set of filters for handling various security-related tasks like CSRF protection, CORS, session management, and more.<br>
+<b>6. Security Filters:</b> Provides a robust set of filters for handling various security-related tasks like CSRF protection, CORS, session management, and more.<br>
